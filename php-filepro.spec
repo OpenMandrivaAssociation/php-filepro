@@ -6,7 +6,7 @@
 Summary:	FilePro extension module for PHP
 Name:		php-%{modname}
 Version:	5.1.6
-Release:	%mkrel 7
+Release:	%mkrel 8
 Group:		Development/PHP
 License:	PHP License
 URL:		http://www.php.net
@@ -28,15 +28,7 @@ information about filePro at http://www.fptech.com/.
 %setup -q -n %{modname}
 
 %build
-export CFLAGS="%{optflags}"
-export CXXFLAGS="%{optflags}"
-export FFLAGS="%{optflags}"
-
-%if %mdkversion >= 200710
-export CFLAGS="$CFLAGS -fstack-protector"
-export CXXFLAGS="$CXXFLAGS -fstack-protector"
-export FFLAGS="$FFLAGS -fstack-protector"
-%endif
+%serverbuild
 
 phpize
 %configure2_5x --with-libdir=%{_lib} \
