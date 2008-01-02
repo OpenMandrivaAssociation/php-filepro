@@ -12,6 +12,7 @@ License:	PHP License
 URL:		http://www.php.net
 Source0:	%{modname}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is a dynamic shared object (DSO) for PHP that will add support for
