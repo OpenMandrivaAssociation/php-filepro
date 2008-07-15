@@ -6,13 +6,13 @@
 Summary:	FilePro extension module for PHP
 Name:		php-%{modname}
 Version:	5.1.6
-Release:	%mkrel 12
+Release:	%mkrel 13
 Group:		Development/PHP
 License:	PHP License
 URL:		http://www.php.net
 Source0:	%{modname}.tar.bz2
 BuildRequires:	php-devel >= 3:5.2.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is a dynamic shared object (DSO) for PHP that will add support for
