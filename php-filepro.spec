@@ -6,7 +6,7 @@
 Summary:	FilePro extension module for PHP
 Name:		php-%{modname}
 Version:	5.1.6
-Release:	%mkrel 24
+Release:	%mkrel 25
 Group:		Development/PHP
 License:	PHP License
 URL:		http://www.php.net
