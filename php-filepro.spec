@@ -11,6 +11,11 @@ Group:		Development/PHP
 License:	PHP License
 URL:		https://www.php.net
 Source0:	%{modname}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
